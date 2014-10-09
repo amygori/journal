@@ -3,5 +3,5 @@ class User < ActiveRecord::Base
   validates :email, presence: true, uniqueness: true
 	
 	has_many :posts
-	has_many :comments
+	has_many :comments, through: => :posts
 end
