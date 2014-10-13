@@ -40,6 +40,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'kramdown'
 gem 'foundation-rails', '~> 5.4.5'
+gem 'bourbon'
+gem 'neat'
 
 group :development, :test do
   gem 'better_errors'
