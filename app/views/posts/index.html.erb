@@ -15,7 +15,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= post.content %></td>
+        <td><%= markdown(post.content) %></td>
         <td><%= post.date %></td>
         <td><%= post.published %></td>
         <td><%= link_to 'Show', post %></td>
